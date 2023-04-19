@@ -1,0 +1,221 @@
+.footer {
+    background-color: $color-pri;
+    padding: 7rem 0;
+
+    @include max(1200px) {
+        padding: 5rem 0;
+    }
+    @include max(600px) {
+        padding: 3rem 0;
+    }
+    @include max(400px) {
+        padding: 2rem 0;
+    }
+    &-top {
+        @include flex;
+        margin-bottom: 3.4rem;
+        @include max (1200px) {
+            margin-bottom: 2.4rem;
+        }
+    }
+    &-logo {
+        &.col-3 {
+            @include max(800px) {
+                width: calc((6/12) * 100%);
+            }
+            @include max (600px) {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            > a {
+                display: block;
+                margin-right: 4.2rem;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    &-ctn {
+        &.col-4 {
+            @include max(800px) {
+                width: calc((6/12) * 100%);
+            }
+            @include max(600px) {
+                width: 100%;
+            }
+        }
+        .txt {
+            font-size: 1.4rem;
+            color: $color-white;
+        }
+    }
+    &-form {
+        &.col-5 {
+            @include max (800px) {
+                width: 100%;
+            }
+        }
+        form {
+            width: calc((420/510) * 100%);
+            @include max (800px) {
+                width: 100%;
+                margin-top: 2rem;
+            }
+            margin-left: auto;
+            label {
+                display: block;
+                color: $color-white;
+                margin-bottom: 1rem;
+            }
+            .input-wr {
+                position: relative;
+                width: 100%;
+                input {
+                    width: 100%;
+                    &::placeholder {
+                        color: $color-sub-text;
+                    }
+                    color: $color-white;
+                    background-color: $color-pri;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    outline: none;
+                    border: none;
+                    padding: 1.2rem 1.6rem;
+                    padding-right: 10rem;
+                }
+                .btn-submit {
+                    cursor: pointer;
+                    color: $color-green;
+                    @include flex;
+                    align-items: center;
+                    justify-content: end;
+                    font-size: 1.4rem;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: fit-content;
+                    height: 100%;
+                    padding: 1.2rem 1.6rem;
+
+                    img {
+                        margin-right: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+    &-social {
+        width: fit-content;
+        margin-left: auto;
+        margin-bottom: 5.4rem;
+        @include max (1200px) {
+            margin-bottom: 3.4rem
+        }
+        @include max (400px) {
+            margin-bottom: 2.4rem
+        }
+        .social {
+            &-list {
+                @include flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &-item {
+                transition: all 0.3s linear;
+                &:not(:last-child) {
+                    margin-right: 0.8rem;
+                }
+                > a {
+                    @include mid-flex;
+                }
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+
+        }
+    }
+
+    &-bottom {
+        @include flex-ct;
+        justify-content: space-between;
+        padding-top: 2.6rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        @include max (800px) {
+            display: block;
+        }
+        .footer-menu {
+            .menu {
+                &-list {
+                    @include flex-ct;
+                    justify-content: space-between;
+                    @include max (800px) {
+                        justify-content: center;
+                        margin-bottom: 2rem;
+                    }
+                }
+                &-item {
+                    margin-right: 2.5rem;
+                    @include max (600px) {
+                        margin-right: 1.4rem;
+                    }
+                    > a {
+                        font-size: 1.4rem;
+                        color: $color-white;
+                        transition: all 0.3s ease-in-out;
+                        @include max (400px) {
+                            font-size: 1.2rem;
+                        }
+
+                    }
+                    &:hover a {
+                        color: $color-green;
+                    }
+                }
+            }
+        }
+        .copy {
+            @include flex-ct;
+            @include max (800px) {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .txt {
+                font-size: 1.4rem;
+                color: $color-white;
+                position: relative;
+                margin-right: 2.4px;
+                &:first-child {
+                    margin-left: 0;
+                    margin-right: 0.8rem;
+                }
+                @include max (400px) {
+                    font-size: 1.2rem;
+                }
+
+            }
+            .title {
+                text-align: center;
+                @include max (400px) {
+                    font-size: 1.2rem;
+                    display: block;
+                }
+            }
+            .desc {
+                @include mid-flex;
+            }
+            &-icon {
+                width: 1.4rem;
+                margin-right: 2.4px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

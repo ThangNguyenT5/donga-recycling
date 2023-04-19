@@ -1,0 +1,111 @@
+.burger {
+    height: 100%;
+    background-color: $color-green;
+    // border-bottom-left-radius: 4px;
+    cursor: pointer;
+    padding: 1.8rem;
+    padding-right: 2.4rem;
+    position: relative;
+
+    // @include max($res-mobile) {
+    //     margin-right: 2rem;
+    // }
+    // &.no-desk {
+    //     @include min($res-mobile-min) {
+    //         display: none;
+    //     }
+
+    //     @include max($res-mobile) {
+    //         width: 3.3rem;
+    //     }
+
+    //     @include max($mobile) {
+    //         width: 5.7rem;
+
+    //         .line {
+    //             margin-left: 0;
+    //         }
+    //     }
+
+    //     @include max(320px) {
+    //         width: 3.3rem;
+
+    //         .line {
+    //             margin-left: 0;
+    //         }
+    //     }
+    // }
+}
+
+.hamburger .line {
+    width: 32px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: $color-black2;
+    display: block;
+    margin: 5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    // @include max($res-mobile) {
+    //     background-color: $color-white;
+    // }
+}
+#hamburger .line:nth-child(3) {
+    width: 50%;
+    margin-left: auto;
+}
+
+// #hamburger.active .line{
+//   -webkit-transform: rotate(30deg);
+//   -ms-transform: rotate(30deg);
+//   -o-transform: rotate(30deg);
+//   transform: rotate(30deg);
+// }
+
+
+// 
+
+// .hamburger {
+//     &.active {
+//         .ham {
+//             @include transform(rotate(45deg));
+
+//             .top {
+//                 stroke-dashoffset: -98px;
+//             }
+
+//             .bottom {
+//                 stroke-dashoffset: -138px;
+//             }
+//         }
+//     }
+// }
+
+// .ham {
+//     cursor: pointer;
+//     -webkit-tap-highlight-color: transparent;
+//     transition: transform 400ms;
+//     -moz-user-select: none;
+//     -webkit-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+
+
+//     .line {
+//         fill: none;
+//         transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+//         stroke: $color-white;
+//         stroke-width: 5.5;
+//         stroke-linecap: round;
+//     }
+
+//     .top {
+//         stroke-dasharray: 40 139;
+//     }
+
+//     .bottom {
+//         stroke-dasharray: 40 180;
+//     }
+// }

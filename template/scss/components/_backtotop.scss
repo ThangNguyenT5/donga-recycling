@@ -1,0 +1,110 @@
+.back-to-top {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100rem;
+  background-color: $color-white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+  position: fixed;
+  bottom: 6.5rem;
+  right: 6rem;
+  z-index: 7;
+  transform: translateX(3rem);
+  opacity: 0;
+  transition: 0.5s linear;
+  cursor: pointer;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    border-radius: 100rem;
+    z-index: -1;
+  }
+  @include max(1440px) {
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  @include max(768px) {
+    right: 1.5rem;
+  }
+
+  &.active {
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .triangle {
+    position: relative;
+    content: '';
+    background-image: url("../assets/images/chevron-up.svg");
+    width: 1.5rem;
+    height: 0.5rem;
+    @include default-background;
+    +.triangle {
+      margin-top: 0.1rem;
+    }
+
+    &:nth-child(1) {
+      animation: BTT 1.5s linear 0.6s infinite;
+    }
+
+    &:nth-child(2) {
+      animation: BTT 1.5s linear 0.3s infinite;
+    }
+
+    &:nth-child(3) {
+      animation: BTT 1.5s linear 0s infinite;
+    }
+  }
+
+  &:hover {
+    @media only screen and (min-width: 901px) {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+      // background-color: $c-yel;
+    }
+  }
+}
+
+.fixedbar {
+  position: fixed;
+  bottom: 10.2rem;
+  right: 3rem;
+  z-index: 7;
+  transition: 0.5s linear;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  @include max(768px) {
+    right: 1.5rem;
+  }
+
+  &-item {
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+  &-link {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100rem;
+    background-color: $color-white;
+    @include mid-flex;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: 0.4s;
+    @include hover {
+      background-color: $color-second;
+    }
+  }
+}

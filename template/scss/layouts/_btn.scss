@@ -1,0 +1,38 @@
+.btn-menu-close {
+    position: absolute;
+    top: -10rem;
+    right: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    &:hover {
+        transform: rotate(-90deg);
+    }
+
+    @include max (800px) {
+        top: -5rem;
+    }
+}
+
+.btn-view {
+    width: 100%;
+    text-align: center;
+    &-link {
+        display: block;
+        color: $color-white;
+        background-color: $color-pri;
+        padding: 1rem 0;
+        border-radius: 4px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+        box-shadow: $shadow-card;
+    }
+
+    &-link:hover {
+        // color: $color-pri;
+        background-color: $color-green;
+    }
+}
