@@ -11172,9 +11172,11 @@ button {
   color: #752423;
 }
 
-.home-whats-content {
-  display: flex;
-  justify-content: space-around;
+@media only screen and (max-width: 1000px) {
+  .home-whats-content {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .home-whats-content .img-content {
   width: 100%;
