@@ -6,6 +6,7 @@
     height: 2.4rem;
     transition: all 0.4s linear;
     cursor: pointer;
+
     &:hover {
         transform: rotate(-90deg);
     }
@@ -18,6 +19,7 @@
 .btn-view {
     width: 100%;
     text-align: center;
+
     &-link {
         display: block;
         color: $color-white;
@@ -35,4 +37,298 @@
         // color: $color-pri;
         background-color: $color-green;
     }
+}
+
+.btn {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background: #72D347;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.8s, color 0.3s 0.3s, transform 0.3s;
+    display: block;
+    user-select: none;
+    border-radius: 0.4rem;
+    @include mid-flex;
+    color: #342828;;
+    flex-shrink: 0;
+    padding: 1.0rem 1.6rem 0.95rem;
+    white-space: nowrap;
+    text-align: center;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    @include fz-16;
+    line-height: 1.5;
+    font-weight: 700;
+
+    @include max(400px) {
+        padding: 1rem 1.6rem 0.9rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        @include mid-flex;
+        flex-shrink: 0;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        transition: all 0.3s 0.2s ease-in-out;
+
+        @include max(600px) {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .text {
+        z-index: 4;
+        position: relative;
+    }
+
+
+    &-inner {
+        position: relative;
+        z-index: 4;
+
+
+        border-radius: 12rem;
+
+        overflow: hidden;
+
+        letter-spacing: 0.02em;
+
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+
+    }
+
+    @media (min-width: 1200px) {
+        &:hover {
+
+            color: white;
+            box-shadow: 16rem 0 0 0 $color-pri inset, -16rem 0 0 0 $color-pri inset;
+            // box-shadow: 0 8rem 0 0 $color-second inset, 0 -8rem 0 0 $color-second  inset;
+        }
+    }
+
+
+    &.t-white {
+        .btn-inner {
+            color: white;
+
+            .text {
+                color: white;
+            }
+        }
+    }
+
+    &.t-pri {
+        .btn-inner {
+            color: $color-pri;
+
+            .text {
+                color: $color-pri;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            &:hover {
+                .btn-inner {
+                    color: white;
+
+                    .text {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    &.t-black {}
+
+
+    &.t-black {
+        .btn-inner {
+            color: black;
+
+            .text {
+                color: black;
+            }
+        }
+    }
+
+    &.t-second {
+        .btn-inner {
+            color: $color-second;
+
+            .text {
+                color: $color-second;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            &:hover {
+                .btn-inner {
+                    color: white;
+
+                    .text {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    &.bd-pri {
+        .btn-inner {
+            border: 0.1rem solid $color-pri;
+        }
+    }
+
+    &.bd-second {
+        .btn-inner {
+            border: 0.1rem solid rgba($color: $color-second, $alpha: 0.7);
+        }
+    }
+
+    &.bd-third {
+        .btn-inner {
+            border: 0.1rem solid #E51515;
+        }
+    }
+
+    &.bd-white {
+        .btn-inner {
+            border: 0.1rem solid white;
+        }
+    }
+
+    &.bd-black {
+        .btn-inner {
+            border: 0.1rem solid black;
+        }
+    }
+
+    &.bd-gray {
+        .btn-inner {
+            border: 0.1rem solid rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &.bg-white {
+        background: white;
+
+        @include hover {
+            box-shadow: 23rem 0 0 0 $color-pri inset, -23rem 0 0 0 $color-pri inset;
+        }
+    }
+
+    &.no-bg {
+        background: transparent;
+
+        @media (min-width: 1200px) {
+            &:hover {
+
+                // color: white;
+                &::before {
+                    transform: skew(30deg) scaleX(1);
+                    transform-origin: left;
+                }
+
+                &::after {
+                    transform: skew(30deg) scaleX(1);
+                    transform-origin: left;
+                }
+
+                .icon {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+
+    &.fw {
+        width: 100%;
+    }
+
+    &.non-upper {
+        .btn-inner {
+            text-transform: none;
+        }
+    }
+
+    &.icon {
+        .btn-inner {
+            padding: 1.2rem 3.2rem 1.1rem;
+        }
+
+        &-left {
+            .icon {
+                margin-right: 0.8rem;
+            }
+        }
+
+        &-right {
+            .icon {
+                margin-left: 0.8rem;
+            }
+        }
+    }
+
+    &.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-second {
+        background: $color-second;
+
+
+        &::before {
+            background: $color-pri;
+        }
+    }
+
+    &-third {
+        background: $color-second;
+
+        &::before {
+            background: $color-pri;
+        }
+
+        .btn-inner {
+            font-weight: 700;
+            font-size: 1.6rem;
+            padding: 0.8rem 0.8rem 0.7rem;
+        }
+    }
+
+    &-fourth {
+        background: $color-pri;
+
+        &::before {
+            background: $color-third;
+        }
+    }
+
+    &-fifth {
+        background: #bcbcbc;
+    }
+
+    &-sixth {
+        background: #E8E8E8;
+    }
+
+    &-seventh {
+        background: #E6E6E6;
+    }
+
+    // &-2 {
+    //   border-radius: 0.4rem;
+    //   .btn-inner {
+
+    //   }
+    // }
 }
