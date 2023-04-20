@@ -493,7 +493,6 @@
 
             .img-2-con {
                 overflow: hidden;
-                
             }
 
             .img-2 {
@@ -511,7 +510,7 @@
                 align-items: center;
                 transition: all 0.5s linear;
 
-                @media only screen and (min-width: 1200px) {
+                @media only screen and (min-width: 1200) {
                     &:hover {
                         transform: translate(-50%, -50%) scale(1.2);
                     }
@@ -559,7 +558,6 @@
                     }
                 }
             }
-            
         }
     }
 

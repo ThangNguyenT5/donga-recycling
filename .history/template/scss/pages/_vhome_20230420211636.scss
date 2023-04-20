@@ -445,10 +445,7 @@
 // home-product-main
 
 .home-product-main {
-    padding-top: 6.5rem;
     width: 100%;
-    position: relative;
-    background: #fbe9d1;
     .title {
         width: 100%;
         padding-bottom: 4.8rem;
@@ -461,26 +458,17 @@
         }
     }
 
-    .item-main {
-        .swiper-slide {
-            background-color: transparent;
-            @media only screen and (max-width: 460px) {
-                width: 100%;
-            }
-        }
-
-        .item-content {
-            display: block;
+    .item-main{
+        .item-content{
             position: relative;
-
-            .img-1 {
+            .img-1{
                 padding-top: 100%;
                 width: 100%;
                 position: relative;
                 overflow: hidden;
                 // max-width: 28.4rem;
                 // height: 28.4rem;
-                img {
+                img{
                     position: absolute;
                     transform: translate(-50%, -50%);
                     top: 50%;
@@ -491,97 +479,12 @@
                 }
             }
 
-            .img-2-con {
-                overflow: hidden;
-                
-            }
-
-            .img-2 {
-                position: absolute;
-                overflow: hidden;
-                top: 50%;
-                left: 50%;
+            .img-2{
                 background: rgba(255, 208, 145, 0.88);
-                transform: translate(-50%, -50%);
                 width: 22.8rem;
                 height: 22.8rem;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transition: all 0.5s linear;
 
-                @media only screen and (min-width: 1200px) {
-                    &:hover {
-                        transform: translate(-50%, -50%) scale(1.2);
-                    }
-                }
-
-                @media only screen and (max-width: 1024px) {
-                    width: 18.8rem;
-                    height: 18.8rem;
-                }
-
-                @media only screen and (max-width: 800px) {
-                    width: 22rem;
-                    height: 22rem;
-                }
-
-                @media only screen and (max-width: 600px) {
-                    width: 18rem;
-                    height: 18rem;
-                }
-
-                @media only screen and (max-width: 460px) {
-                    width: 24rem;
-                    height: 24rem;
-                }
-
-                @media only screen and (max-width: 360px) {
-                    width: 16rem;
-                    height: 16rem;
-                }
-
-                .content {
-                    .text {
-                        font-weight: 700;
-                        font-size: 2rem;
-                        line-height: 1, 5;
-
-                        color: #342828;
-                        padding-bottom: 1.2rem;
-                    }
-
-                    img {
-                        width: 1.2rem;
-                        height: 1.2rem;
-                        margin: 0 auto;
-                    }
-                }
             }
-            
-        }
-    }
-
-    .btn {
-        margin: 7rem auto 0;
-        transform: translateY(2rem);
-        @media only screen and (max-width: 800px) {
-            margin-top: 3rem;
-        }
-    }
-
-    .bn-home-product {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     }
 }

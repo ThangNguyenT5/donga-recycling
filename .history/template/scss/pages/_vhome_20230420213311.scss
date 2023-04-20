@@ -445,10 +445,7 @@
 // home-product-main
 
 .home-product-main {
-    padding-top: 6.5rem;
     width: 100%;
-    position: relative;
-    background: #fbe9d1;
     .title {
         width: 100%;
         padding-bottom: 4.8rem;
@@ -462,10 +459,11 @@
     }
 
     .item-main {
-        .swiper-slide {
-            background-color: transparent;
+
+        .swiper-slide{
             @media only screen and (max-width: 460px) {
                 width: 100%;
+                
             }
         }
 
@@ -493,7 +491,6 @@
 
             .img-2-con {
                 overflow: hidden;
-                
             }
 
             .img-2 {
@@ -511,11 +508,12 @@
                 align-items: center;
                 transition: all 0.5s linear;
 
-                @media only screen and (min-width: 1200px) {
+                @media only screen and (min-width:1200){
                     &:hover {
                         transform: translate(-50%, -50%) scale(1.2);
                     }
                 }
+               
 
                 @media only screen and (max-width: 1024px) {
                     width: 18.8rem;
@@ -532,14 +530,9 @@
                     height: 18rem;
                 }
 
-                @media only screen and (max-width: 460px) {
-                    width: 24rem;
-                    height: 24rem;
-                }
-
-                @media only screen and (max-width: 360px) {
-                    width: 16rem;
-                    height: 16rem;
+                @media only screen and (max-width: 400px) {
+                    width: 26rem;
+                    height: 26rem;
                 }
 
                 .content {
@@ -559,29 +552,6 @@
                     }
                 }
             }
-            
-        }
-    }
-
-    .btn {
-        margin: 7rem auto 0;
-        transform: translateY(2rem);
-        @media only screen and (max-width: 800px) {
-            margin-top: 3rem;
-        }
-    }
-
-    .bn-home-product {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     }
 }
