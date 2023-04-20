@@ -10616,7 +10616,149 @@ button {
 }
 
 .progress {
-  padding-top: 10rem;
+  padding: 10rem 0;
+}
+.progress-re {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.progress-step {
+  width: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .progress-step {
+    justify-content: unset !important;
+  }
+}
+.progress-step-wrap {
+  position: relative;
+  width: fit-content;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+.progress-step .icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: #6CAB5E;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 2.4rem;
+}
+@media screen and (max-width: 1200px) {
+  .progress-step .icon {
+    margin: 0 !important;
+  }
+}
+.progress-step .text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #298600;
+}
+@media only screen and (max-width: 1200px) {
+  .progress-step .text {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .progress-step .text {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .progress-step .text {
+    position: static;
+    transform: none !important;
+  }
+}
+.progress-step:nth-child(even) {
+  justify-content: flex-end;
+}
+.progress-step:nth-child(even) .text {
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc(100% + var(--pdGen2));
+  text-align: right;
+  white-space: nowrap;
+}
+.progress-step:nth-child(2) {
+  margin-bottom: 16.8rem;
+}
+.progress-step:nth-child(2) .icon {
+  margin-right: 15.8rem;
+}
+.progress-step:nth-child(4) {
+  margin-bottom: 9.1rem;
+}
+.progress-step:nth-child(4) .icon {
+  margin-right: 21rem;
+}
+.progress-step:nth-child(6) .icon {
+  margin-right: 5rem;
+}
+.progress-step:nth-child(3) .icon {
+  margin-left: 15.8rem;
+}
+.progress-step:nth-child(5) {
+  margin-bottom: 9.1rem;
+}
+.progress-step:nth-child(5) .icon {
+  margin-left: 21rem;
+}
+.progress-step:nth-child(7) .icon {
+  margin-left: 5rem;
+}
+.progress-step:nth-child(odd) .text {
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + var(--pdGen2));
+  white-space: nowrap;
+}
+.progress-step:first-child {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2.1rem;
+}
+.progress-step:first-child .icon {
+  margin: 0;
+}
+.progress-step:first-child .text {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(100% + var(--pdGen2));
+  top: auto;
+}
+.progress-dc {
+  width: 100%;
+  max-width: 54rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4.7rem;
+}
+@media screen and (max-width: 1200px) {
+  .progress-dc {
+    display: none;
+  }
 }
 
 :root {
