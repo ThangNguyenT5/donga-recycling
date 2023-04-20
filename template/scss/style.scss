@@ -6,6 +6,7 @@
 @import url("../js/library/themifi/themify-icons.css");
 @import url("../js/library/magnific/magnific-popup.css");
 @import url("../js/library/gallery/lightgallery.min.css");
+@import url("../js/library/plyr/plyr.css");
 // Core
 @import "./core/reset";
 @import "./core/variable";
@@ -29,6 +30,8 @@
 @import "./components/mobile";
 @import "./components/popup";
 @import "./components/ani";
+@import "./components/form";
+@import "./components/breadcrumb";
 // Layout
 @import "./layouts/banner";
 @import "./layouts/breadcrumb";
@@ -52,3 +55,24 @@
 @import "./layouts/layout";
 // Pages
 @import "./pages/products.scss";
+@import "./pages/news-ct";
+@import "./pages/contact";
+@import "./pages/about";
+:root {
+    
+    --pdGen: 1.2rem;
+    --pdGen2: 2.4rem;
+    --pd3: 3rem;
+    --Hmenu: 8rem;
+
+    @include max(1201px) {
+        --Hmenu: 4rem;
+    }
+
+    @include max(800px) {
+        --pdGen: 0.6rem;
+        --pdGen2: 1.2rem;
+        $pdGen: 0.6rem;
+        $pdGen2: 1.2rem;
+    }
+}

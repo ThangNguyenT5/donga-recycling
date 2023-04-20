@@ -1,0 +1,118 @@
+.weh {
+    padding-top: 10rem;
+
+    @include max(1200px) {
+        padding-top: 5rem;
+    }
+
+    &-item {
+        cursor: pointer;
+
+        &-wrap {
+            position: relative;
+        }
+
+        &-img {
+            @include imgPd(1, 1);
+
+            img {
+                @include imgCover;
+            }
+        }
+
+        &-ct {
+            width: 33rem;
+            height: 33rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.6);
+            background: rgba(255, 208, 144, 0.88);
+            border-radius: 18rem;
+            @include mid-flex;
+            flex-direction: column;
+            padding: 3.2rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &-tit {
+            font-weight: 700;
+            @include fz-20;
+            margin-bottom: 0.4rem;
+        }
+
+        &-info {
+            font-weight: 700;
+            @include fz-34;
+            line-height: 1.3;
+
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
+            margin-top: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &-desc {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &-top {
+            transform: scale(1.25);
+            margin-bottom: 1.8rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        @include hover {
+            .weh-item-ct {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            .weh-item-top {
+                transform: scale(1);
+            }
+
+            .weh-item-icon {
+                margin-top: 0;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .weh-item-desc {
+                max-height: 9rem;
+            }
+        }
+    }
+
+    .swiper-slide {
+        min-width: 37rem;
+
+        &-active {
+            .weh-item-ct {
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            .weh-item-top {
+                transform: scale(1);
+            }
+
+            .weh-item-icon {
+                margin-top: 0;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .weh-item-desc {
+                max-height: 9rem;
+            }
+        }
+    }
+}
+
+.progress {
+    padding-top: 10rem;
+}
