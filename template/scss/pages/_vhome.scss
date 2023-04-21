@@ -14,6 +14,7 @@
 
     .title {
         padding-bottom: 5.2rem;
+
         &-text {
             font-weight: 700;
             font-size: 3.4rem;
@@ -25,9 +26,11 @@
 
 .home-news-content {
     padding-bottom: 5rem;
+
     &-left {
         width: calc(8 * 100% / 12);
         display: flex;
+
         .left-item {
             width: 50%;
             margin-right: 2.5rem;
@@ -74,6 +77,7 @@
                     height: 1.3rem;
                     flex-shrink: 0;
                     margin-right: 0.6rem;
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -134,6 +138,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 2.4rem;
+
             &-img {
                 max-width: 15.5rem;
 
@@ -141,6 +146,7 @@
                 position: relative;
                 overflow: hidden;
                 width: 100%;
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -155,6 +161,7 @@
 
             &-content {
                 padding: 0 0.7rem 0 1.2rem;
+
                 .left-item-date {
                     display: flex;
                     align-items: center;
@@ -164,6 +171,7 @@
                         height: 1.3rem;
                         flex-shrink: 0;
                         margin-right: 0.6rem;
+
                         img {
                             width: 100%;
                             height: 100%;
@@ -190,6 +198,7 @@
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
+
                     &:hover {
                         color: $color-green2;
                     }
@@ -202,7 +211,7 @@
         flex-direction: column;
     }
 
-    
+
 }
 
 
@@ -214,6 +223,7 @@
     overflow: hidden;
     padding-top: 5.9em;
     padding-bottom: 5rem;
+
     .bn-home-whats {
         width: 100%;
         height: calc(100vw * 658 / 1728);
@@ -221,6 +231,7 @@
         transform: translate(-50%, -50%);
         top: 80%;
         left: 50%;
+
         img {
             width: 100%;
             height: 100%;
@@ -234,6 +245,7 @@
 
 .home-whats-title {
     padding-bottom: 5.6rem;
+
     .text {
         text-align: center;
         font-weight: 700;
@@ -244,59 +256,61 @@
 }
 
 .home-whats-content {
-    @media only screen and (max-width:1000px){
+    @media only screen and (max-width:1000px) {
         display: flex;
         justify-content: space-around;
     }
-   
-    
+
+
     .img-content {
         width: 100%;
         max-width: 58.8rem;
         margin: 0 auto;
+
         img {
             width: 100%;
             height: 100%;
         }
 
-        @media only screen and (max-width:1625px){
+        @media only screen and (max-width:1625px) {
             max-width: 50.8rem;
         }
 
-        @media only screen and (max-width:1550px){
+        @media only screen and (max-width:1550px) {
             max-width: 40.8rem;
         }
 
-        @media only screen and (max-width:1430px){
-            max-width:35.8rem;
+        @media only screen and (max-width:1430px) {
+            max-width: 35.8rem;
         }
 
-        @media only screen and (max-width:1290px){
-            max-width:30.8rem;
+        @media only screen and (max-width:1290px) {
+            max-width: 30.8rem;
         }
 
-        @media only screen and (max-width:1140px){
-            max-width:25.8rem;
-            
+        @media only screen and (max-width:1140px) {
+            max-width: 25.8rem;
+
         }
 
-        @media only screen and (max-width:100px){
-            max-width:20.8rem;
+        @media only screen and (max-width:100px) {
+            max-width: 20.8rem;
             margin: 0;
             width: 50%;
         }
 
         @media screen and (max-width: 620px) {
-            
+
             width: 100%;
             margin-bottom: 2rem;
         }
     }
 
-    .content-con{
+    .content-con {
         width: 50%;
+
         @media screen and (max-width: 620px) {
-            
+
             width: 100%;
         }
     }
@@ -308,116 +322,120 @@
         position: absolute;
         transform: translate(-50%, -50%);
         top: 30%;
-        right:15%;
+        right: 15%;
 
-        @media only screen and (max-width:1550px){
+        @media only screen and (max-width:1550px) {
             top: 40%;
             right: 10%;
         }
 
-        @media only screen and (max-width:1250px){
+        @media only screen and (max-width:1250px) {
             top: 40%;
             right: 4%;
         }
 
-        @media only screen and (max-width:1140px){
+        @media only screen and (max-width:1140px) {
             right: 0%;
             top: 48%;
         }
 
-        @media only screen and (max-width:1000px){
+        @media only screen and (max-width:1000px) {
             position: static;
             transform: none;
             max-width: none;
             margin-bottom: 2rem;
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             position: absolute;
             top: 65%;
-            left:22%;
+            left: 22%;
 
-            .content{
-                .title{
+            .content {
+                .title {
                     width: 100%;
-                    &-text{
+
+                    &-text {
                         text-align: end;
 
-                        @media only screen and (max-width:1000px){
+                        @media only screen and (max-width:1000px) {
                             text-align: start;
                         }
                     }
                 }
 
-                .text{
-                    &-inner{
+                .text {
+                    &-inner {
                         text-align: end;
-                        @media only screen and (max-width:1000px){
+
+                        @media only screen and (max-width:1000px) {
                             text-align: start;
                         }
                     }
                 }
             }
 
-            @media only screen and (max-width:1000px){
+            @media only screen and (max-width:1000px) {
                 position: static;
                 transform: none;
             }
         }
 
-        &:last-child{
+        &:last-child {
             position: absolute;
             top: 85%;
-            right:5%;
+            right: 5%;
 
-            .content{
-                .title{
+            .content {
+                .title {
                     width: 100%;
-                    &-text{
+
+                    &-text {
                         text-align: start;
                     }
                 }
 
-                .text{
-                    &-inner{
+                .text {
+                    &-inner {
                         text-align: start;
                     }
                 }
             }
 
-            @media only screen and (max-width:1400px){
-                
+            @media only screen and (max-width:1400px) {
+
                 right: 2%;
             }
 
-            @media only screen and (max-width:1230px){
-                
+            @media only screen and (max-width:1230px) {
+
                 right: -2%;
             }
 
-            @media only screen and (max-width:1140px){
+            @media only screen and (max-width:1140px) {
                 right: -6%;
             }
 
-            @media only screen and (max-width:1000px){
+            @media only screen and (max-width:1000px) {
                 position: static;
                 transform: none;
             }
         }
-        
+
         .img-item {
             width: 4.4rem;
             height: 4.4rem;
             margin-right: 2rem;
             flex-shrink: 0;
             display: none;
+
             img {
                 width: 100%;
                 height: 100%;
             }
 
-            @media only screen and (max-width:1000px){
-                
+            @media only screen and (max-width:1000px) {
+
                 display: block;
             }
         }
@@ -425,6 +443,7 @@
         .content {
             .title {
                 padding-bottom: 2rem;
+
                 &-text {
                     font-weight: 700;
                     font-size: 2rem;
@@ -432,7 +451,7 @@
                     color: #342828;
                 }
 
-                @media only screen and (max-width:1000px){
+                @media only screen and (max-width:1000px) {
                     padding-bottom: 1rem;
                 }
             }
@@ -446,13 +465,212 @@
                 }
             }
 
-          
+
         }
 
-       
+
     }
 
     @media screen and (max-width: 620px) {
         flex-direction: column;
+    }
+}
+
+.aboutus {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+
+    @include max(1200px) {
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    &-wrap {
+        @include max(1024px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-left {
+        @include max(1024px) {
+            width: 100%;
+            margin-top: 5rem;
+        }
+    }
+
+    &-right {
+        @include max(1024px) {
+            width: 100%;
+        }
+    }
+
+    &-ct {
+        padding-right: 4.8rem;
+    }
+
+    &-tt {
+        font-weight: 700;
+        @include fz-20;
+        color: #298600;
+    }
+
+    &-txt {
+        font-size: 1.4rem;
+        line-height: 1.4;
+        color: #9D9D9D;
+
+    }
+
+    &-cus-txt {
+        .txt {
+            font-weight: 700;
+            @include fz-20;
+            line-height: 1.5;
+            color: #9D9D9D;
+        }
+
+        .num {
+            font-weight: 700;
+            @include fz-34;
+            line-height: 1.3;
+            color: #298600;
+        }
+    }
+
+    &-right {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            height: 25rem;
+            left: -8.8rem;
+            width: calc(100% + 8.8rem + (100vw - 120rem)/2);
+            background: #FBE9D1;
+            border-radius: 0.4rem 0px 0px 0.4rem;
+            bottom: 0;
+
+            @include max(1230px) {
+                width: calc(100% + 10.3rem);
+            }
+        }
+    }
+
+    &-img {
+        @include imgPd(440, 586);
+        border-radius: 0.4rem;
+
+        img {
+            @include imgCover;
+        }
+    }
+
+    &-txtbig {
+        font-weight: 700;
+        font-size: 8rem;
+        line-height: 1.2;
+        margin-left: -17rem;
+        margin-right: calc((100vw - 120rem)/-2);
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        color: transparent;
+        -webkit-text-stroke: 0.1rem rgb(41, 134, 0, 0.3);
+        color: transparent;
+        margin-bottom: -5rem;
+        
+        @include max(1230px) {
+            margin-right: -1.5rem;
+            margin-left: -5rem;
+        }
+
+        @include max(1200px) {
+            font-size: 6rem;
+        }
+
+        @include max(1024px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include max(800px) {
+            font-size: 4rem;
+        }
+    }
+}
+
+.scrolld-btn {
+    width: 15.2rem;
+    height: 15.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(2rem, -50%);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+
+    @include max(1550px) {
+        transform: translate(-100%, -50%);
+    }
+
+    @include max(1024px) {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        background: $color-pri;
+    }
+
+    .icon {
+        position: absolute;
+        width: 3.2rem;
+        height: 3.2rem;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include max(1550px) {
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    &-inner {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: $color-pri;
+        animation: spinZ 20s linear infinite;
+        text-align: center;
+        overflow: hidden;
+
+        @include max(1550px) {
+            color: white;
+        }
+
+        span {
+            position: absolute;
+            display: inline-block;
+            left: 0;
+            right: 0;
+            top: 0;
+            text-transform: uppercase;
+            bottom: 0;
+            transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+        }
+    }
+}
+
+@keyframes spinZ {
+    0% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
     }
 }

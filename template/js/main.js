@@ -25,6 +25,7 @@ import ProgressScroll from "./module/ProgressScroll.js";
 import DropDownModule from "./module/DropDownModule.js";
 import select2Module from "./module/select2Module.js";
 import plyrModule from "./module/plyrModule.js";
+import AnimatedModule from "./module/Animated.js";
 // import SelectIsotope from "./module/SelectIsotope.js";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -55,6 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // ParallaxModule();
   CountUpModule();
   // SelectIsotope();
+  AnimatedModule();
   ScrollDesktop();
   GsapModule();
   ProgressScroll();
