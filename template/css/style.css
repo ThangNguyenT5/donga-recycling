@@ -10857,6 +10857,20 @@ button {
 
 .progress {
   padding: 10rem 0;
+  position: relative;
+  background-color: #FAFAFA;
+  overflow: hidden;
+}
+.progress .bn-progress {
+  transform: translateY(-50%);
+  top: 30%;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+.progress .bn-progress img {
+  width: 100%;
+  height: 100%;
 }
 .progress .desc {
   max-width: 60rem;
@@ -11880,6 +11894,16 @@ button {
     width: 100%;
   }
 }
+.home-product-main .item-main .swiper-pagination-bullet {
+  width: 1.6rem;
+  height: 0.6rem;
+  border-radius: 1.2rem;
+  background: #D9D9D9;
+  border: none;
+}
+.home-product-main .item-main .swiper-pagination-bullet-active {
+  background: #298600;
+}
 .home-product-main .item-main .item-content {
   display: block;
   position: relative;
@@ -11986,6 +12010,233 @@ button {
   object-fit: cover;
 }
 
+.aboutus {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .aboutus {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutus-wrap {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutus-left {
+    width: 100%;
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutus-right {
+    width: 100%;
+  }
+}
+.aboutus-ct {
+  padding-right: 4.8rem;
+}
+.aboutus-tt {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #298600;
+}
+@media only screen and (max-width: 1200px) {
+  .aboutus-tt {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .aboutus-tt {
+    font-size: 1.6rem;
+  }
+}
+.aboutus-txt {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #9D9D9D;
+}
+.aboutus-cus-txt .txt {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #9D9D9D;
+}
+@media only screen and (max-width: 1200px) {
+  .aboutus-cus-txt .txt {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .aboutus-cus-txt .txt {
+    font-size: 1.6rem;
+  }
+}
+.aboutus-cus-txt .num {
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.3;
+  color: #298600;
+}
+@media only screen and (max-width: 1200px) {
+  .aboutus-cus-txt .num {
+    font-size: 2.9rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .aboutus-cus-txt .num {
+    font-size: 2.4rem;
+  }
+}
+.aboutus-right {
+  position: relative;
+}
+.aboutus-right::before {
+  position: absolute;
+  content: "";
+  height: 25rem;
+  left: -8.8rem;
+  width: calc(100% + 8.8rem + (100vw - 120rem) / 2);
+  background: #FBE9D1;
+  border-radius: 0.4rem 0px 0px 0.4rem;
+  bottom: 0;
+}
+@media screen and (max-width: 1230px) {
+  .aboutus-right::before {
+    width: calc(100% + 10.3rem);
+  }
+}
+.aboutus-img {
+  display: block;
+  padding-top: calc((440 / 586) * 100%);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+.aboutus-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutus-txtbig {
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 1.2;
+  margin-left: -17rem;
+  margin-right: calc((100vw - 120rem) / -2);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem rgba(41, 134, 0, 0.3);
+  color: transparent;
+  margin-bottom: -5rem;
+}
+@media screen and (max-width: 1230px) {
+  .aboutus-txtbig {
+    margin-right: -1.5rem;
+    margin-left: -5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutus-txtbig {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutus-txtbig {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .aboutus-txtbig {
+    font-size: 4rem;
+  }
+}
+
+.scrolld-btn {
+  width: 15.2rem;
+  height: 15.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(2rem, -50%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+@media screen and (max-width: 1550px) {
+  .scrolld-btn {
+    transform: translate(-100%, -50%);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .scrolld-btn {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    background: #752423;
+  }
+}
+.scrolld-btn .icon {
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1550px) {
+  .scrolld-btn .icon {
+    filter: brightness(0) invert(1);
+  }
+}
+.scrolld-btn-inner {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #752423;
+  animation: spinZ 20s linear infinite;
+  text-align: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 1550px) {
+  .scrolld-btn-inner {
+    color: white;
+  }
+}
+.scrolld-btn-inner span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+  bottom: 0;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1);
+}
+
+@keyframes spinZ {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
 :root {
   --pdGen: 1.2rem;
   --pdGen2: 2.4rem;

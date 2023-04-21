@@ -26,7 +26,6 @@ import DropDownModule from "./module/DropDownModule.js";
 import select2Module from "./module/select2Module.js";
 import plyrModule from "./module/plyrModule.js";
 import AnimatedModule from "./module/Animated.js";
-import ScrollToSectionModule from "./module/ScrollToSectionModule.js";
 // import SelectIsotope from "./module/SelectIsotope.js";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -62,5 +61,4 @@ window.addEventListener("DOMContentLoaded", () => {
   GsapModule();
   ProgressScroll();
   plyrModule();
-  ScrollToSectionModule();
 });
