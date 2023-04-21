@@ -111,13 +111,9 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
 
-                @media screen and (min-width:1200px) {
-                    &:hover {
-                        color: $color-green2;
-                    }
+                &:hover {
+                    color: $color-green2;
                 }
-
-               
 
                 @media screen and (max-width: 800px) {
                     max-width: none;
@@ -156,13 +152,9 @@
                     transition: all 0.5s linear;
                 }
 
-                @media screen and (min-width:1200px) {
-                    &:hover img {
-                        transform: scale(1.2);
-                    }
+                &:hover img {
+                    transform: scale(1.2);
                 }
-
-                
             }
 
             &-content {
@@ -202,13 +194,9 @@
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
-
-                    @media screen and (min-width:1200px) {
-                        &:hover {
-                            color: $color-green2;
-                        }
+                    &:hover {
+                        color: $color-green2;
                     }
-                    
                 }
             }
         }

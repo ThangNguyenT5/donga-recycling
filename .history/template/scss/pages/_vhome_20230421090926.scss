@@ -202,13 +202,9 @@
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
-
-                    @media screen and (min-width:1200px) {
-                        &:hover {
-                            color: $color-green2;
-                        }
+                    &:hover {
+                        color: $color-green2;
                     }
-                    
                 }
             }
         }
