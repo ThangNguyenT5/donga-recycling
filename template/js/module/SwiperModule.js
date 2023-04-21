@@ -212,4 +212,50 @@ export default function SwiperModule() {
       thumbs: { swiper: swiper2 },
     });
   }
+
+  const bnH = document.querySelector(".bn-home");
+  if (bnH) {
+    const left = bnH.querySelector(".bn-left");
+    var swiper1 = new Swiper(left.querySelector(".swiper"), {
+      slidesPerView: "auto",
+      lazy: !0,
+      loop: true,
+      pagination: {
+        el: left.querySelector(".swiper-pagination"),
+        clickable: !0,
+      },
+      navigation: {
+        nextEl: left.querySelector(".next"),
+        prevEl: left.querySelector(".prev"),
+      },
+      speed: 1000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+
+    const right = bnH.querySelector(".bn-right");
+    var swiper2 = new Swiper(right.querySelector(".swiper"), {
+      slidesPerView: "auto",
+      lazy: !0,
+      loop: true,
+      pagination: {
+        el: right.querySelector(".swiper-pagination"),
+        clickable: !0,
+      },
+      navigation: {
+        nextEl: right.querySelector(".next"),
+        prevEl: right.querySelector(".prev"),
+      },
+      speed: 1000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+    });
+
+    swiper1.controller.control = swiper2;
+    swiper2.controller.control = swiper1;
+  }
 }
